@@ -66,6 +66,10 @@ nav ul{
     background-color: #152D35;
     cursor: pointer;
     font-family: 'Nunito', sans-serif;
+    transition: background 0.5s ease-in-out;
+}
+.hero button:hover{ 
+    background-color: #345B63;
 }
 .hero h2{ 
     font-family: 'Poppins', sans-serif;
@@ -150,8 +154,24 @@ nav ul{
      }
      
  }
-
-
+ /*Benefits section*/
+ .benefits{ 
+     color: white;
+     background: #152D35;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     min-height: 30vh;
+ }
+ .benefits h2{
+     margin: 2rem;
+ }
+ .benefits h3{ 
+     padding: 2rem;
+ }
+ .card img{
+     height: 7rem;
+ }
 
 @media screen and (max-width:802px) {
     nav{
