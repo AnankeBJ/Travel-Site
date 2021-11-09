@@ -105,24 +105,23 @@ nav ul{
 
 #slider{
     overflow: hidden;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     
 }
 #slider figure{ 
     position: relative;
     width: 500%;
+    height: 100%;
     margin: 0;
     left: 0;
     animation: 20s slider infinite;
 }
 #slider figure img{
     width: 20%;
-    float: left;
-}
-#slider img{ 
     height: 100%;
-    width: 100%;
+    float: left;
+    object-fit: cover;
 }
  @keyframes slider {
      0%{ 
@@ -206,40 +205,69 @@ nav ul{
 /*Form section*/
 .form-section{ 
     min-height: 100vh;
-    background: coral;
+    background:#345B63;
     display: flex;
-    text-align: center;
     justify-content: center;
     align-items: center;
+    color: white;
  }
 
 .form-data{ 
     background: rgb(49, 53, 45, 0.4);
+    border-radius: 10px;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    width: 10rem;
-}
-.form-data h4{
-    font-size: 3rem;
-}
-.form-data label{ 
-    font-size: 3rem;
-
-}
-.form-button{
-    display: flex;
+    align-items: center;
     justify-content: center;
 }
-.form-button button{  
-    height: 4rem;
-    width: 13rem;
+.contact-header{
+    font-size: 6rem;
+    text-align: center;
+    margin: 3rem;
+}
+
+.form-data label{ 
     font-size: 2rem;
+}
+.name-form, .email-form{ 
+    padding: 2rem;
+}
+.form-section button{  
+    height: 3rem;
+    width: 10rem;
+    font-size: 1.5rem;
     margin: 3rem;
     color: white;
     background-color: #152D35;
     cursor: pointer;
     font-family: 'Nunito', sans-serif;
     transition: background 0.5s ease-in-out;
+    text-align: center;
+}
+.footer-section{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-section img{
+    width: 4rem;
+    height: 4rem;
+    margin: 1.5rem;
+}
+.footer-img{ 
+    display: flex;
+
+}
+.footer{ 
+    min-height: 10vh;
+    background: #EEEEEE;
+}
+.footer h2{ 
+    font-size: 2rem;
+    padding: 2rem;
+
 }
 @media screen and (max-width:802px) {
     nav{
@@ -252,5 +280,4 @@ nav ul{
     html{ 
         font-size:45%;
     }
-
 }
