@@ -29,6 +29,7 @@ nav{
     display: flex;
     margin: auto;
     flex-wrap: wrap;
+    
 }
 nav ul{
     display: flex;
@@ -101,13 +102,10 @@ nav ul{
 .locations h3{ 
     margin-bottom: 30rem;
 }
-
-
 #slider{
     overflow: hidden;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    
 }
 #slider figure{ 
     position: relative;
@@ -121,7 +119,7 @@ nav ul{
     width: 20%;
     height: 100%;
     float: left;
-    object-fit: cover;
+    object-fit:cover;
 }
  @keyframes slider {
      0%{ 
@@ -262,7 +260,8 @@ nav ul{
 }
 .footer{ 
     min-height: 10vh;
-    background: #EEEEEE;
+    background:#152D35;
+    color: white;
 }
 .footer h2{ 
     font-size: 2rem;
@@ -279,5 +278,8 @@ nav ul{
     }
     html{ 
         font-size:45%;
+    }
+    @media screen {
+        
     }
 }
